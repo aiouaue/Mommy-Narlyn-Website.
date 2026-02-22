@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mommy Narlyn's Printing Shop</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+        .services-grid, .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-card, .product-card {
+            text-align: center;
+            margin: 10px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .contact-item {
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Mommy Narlyn's Printing Shop</h1>
+    <p>Where we print your ideas!</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contacts.html">Contact</a>
+</nav>
+
+<section id="PRINTS">
+    <h2>PRINTS</h2>
+    <h3>Here are prices of our customized products.</h3>
+</section>
+
+<section id="products">
+    <h2>Personalized</h2>
+    <h3>Here are prices of our customized products.</h3>
+    
+    <details>
+        <summary class="product-button">View Price Products</summary>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div> <img src="visual\prod\f36337ac-3c0a-400d-88e4-7fb8f730893f.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Personalized T-Shirts</h3>
+                <p>Starts at 250 Pesos</p>
+                <button onclick="addToCart(1, 'Personalized T-Shirts', 250)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="visual/sample2.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Keychains</h3>
+                <p>Starts at  Pesos</p>
+                <button onclick="addToCart(2, 'Keychains', 0)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="visual\prod\mugs.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Mugs</h3>
+                <p>Starts at 90 Pesos</p>
+                <button onclick="addToCart(3, 'Mugs', 90)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="visual\prod\hats.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Caps</h3>
+                <p>Starts at 220 Pesos</p>
+                <button onclick="addToCart(4, 'Caps', 220)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="images/sample2.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Name Tag Templates</h3>
+                <p>Laminated - 70 Pesos</p>
+                <p>PVC - 120 Pesos</p>
+                <button onclick="addToCart(5, 'Name Tag Templates', 70 - 120)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="visual\prod\polaroid strip.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Polaroids</h3>
+                <p>Starts at 25 Pesos</p>
+                <button onclick="addToCart(6, 'Polaroids', 25)">Add to Cart</button>
+            </div>
+
+        </div>
+    </details>
+</section>
+
+<section id="products">
+    <h2>Stickers</h2>
+    <h3>Here are prices of our customized products.</h3>
+
+    <details>
+        <summary class="product-button">View Price Products</summary>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div> <img src="images/sample2.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Vinyl Name Stickers</h3>
+                <p>Starts at 30 Pesos</p>
+                <button onclick="addToCart(7, 'Vinyl Name Stickers', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="images/sample2.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Stickers</h3>
+                <p>Starts at 70 Pesos</p>
+                <button onclick="addToCart(8, 'Stickers', 70)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="visual\prod\Decal Sticker.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Decals</h3>
+                <p>5 Pesos per square-inch.</p>
+                <button onclick="addToCart(9, 'Decals', 5)">Add to Cart</button>
+            </div>
+
+        </div>
+    </details>
+</section>
+
+<section id="products">
+    <h2>Business</h2>
+    <h3>Here are prices of our customized products.</h3>
+
+    <details>
+        <summary class="product-button">View Price Products</summary>
+
+        <div class="product-grid">
+
+
+            <div class="product-card">
+                <div> <img src="visual\prod\menu(1).jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Menu Prints</h3>
+                <p>Starts at 80 Pesos</p>
+                <button onclick="addToCart(10, 'Menu Prints', 80)">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <div> <img src="visual\prod\fe027132-1407-457a-8677-d55647b86049.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Tarpaulins</h3>
+                <p>Starts at 180 Pesos</p>
+                <button onclick="addToCart(11, 'Tarpaulins', 180)">Add to Cart</button>
+            </div>
+
+        </div>
+    </details>
+</section>
+
+<section id="products">
+    <h2>Others</h2>
+    <h3>Here are prices of our customized products.</h3>
+
+    <details>
+        <summary class="product-button">View Price Products</summary>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div> <img src="visual\prod\Lootbag.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Hand Bags</h3>
+                <p>Starts at 350 Pesos</p>
+                <button onclick="addToCart(12, 'Hand Bags', 350)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="visual\prod\sash.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Sash</h3>
+                <p>Starts at 100 Pesos</p>
+                <button onclick="addToCart(13, 'Sash', 100)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="images/sample2.jpg" width="434" height="434" alt=""></a> </div>
+                <h3>Gift Boxes</h3>
+                <p>Starts at 350 Pesos</p>
+                <button onclick="addToCart(14, 'Gift Boxes', 350)">Add to Cart</button>
+            </div>
+
+        </div>
+    </details>
+</section>
+
+  <hr>
+
+  <h2>Shopping Cart</h2>
+  <ul id="cart-items"></ul>
+  <h3 id="cart-total">Total: ₱0</h3>
+
+  <button id="purchase-btn" onclick="purchase()">Purchase</button>
+
+  <script src="Local Storage.js"></script>
+</body>
+</html>
+
+<footer>
+    <p>© 2021 Mommy Narlyn's Printing Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

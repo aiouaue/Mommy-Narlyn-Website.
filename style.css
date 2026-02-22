@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    color: #794141;
+    background-image: url('https://i.ibb.co/j7dY9BC/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    filter: sepia(10%) contrast(1.05);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 115, 85, 0.15);
+    z-index: -1;
+}
+
+header {
+    background: linear-gradient(rgba(223, 168, 162, 0.2), rgba(235, 194, 190, 0.5)), 
+    url('https://i.ibb.co/DH8Nwwr0/headers.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+    border-bottom: 2px solid rgba(255, 225, 221, 0.5);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(223, 168, 162, 0.4);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.95;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    font-style: italic;
+}
+
+nav {
+    background: rgba(223, 168, 162, 0.95);
+    backdrop-filter: blur(10px) sepia(20%);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    border: 2px solid rgba(139, 115, 85, 0.3);
+    font-family: 'Lora', serif;
+    background: linear-gradient(145deg, #794141, #794141);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+}
+
+nav a:hover {
+    background: linear-gradient(145deg, #dfa8a2, #ee9f96);
+    border-color: #dfa8a2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+nav a:active {
+    background: linear-gradient(145deg, #ffd5d5, #dfa8a2);
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    border-color: #ffffff;
+}
+
+/* Title */
+section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Product & Service Buttons */
+.product-button {
+    background: linear-gradient(145deg, #794141, #794141);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-button:hover {
+    background: linear-gradient(145deg, #dfa8a2, #ee9f96);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.product-button:active {
+    background: linear-gradient(145deg, #dfa8a2, #dfa8a2);
+    transform: translateY(-1px) scale(0.98);
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, rgba(223, 168, 162, 0.5), rgba(223, 168, 162, 0.5));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+/* */
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #dfa8a2, #dfa8a2);
+    margin: 0.5rem auto;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Product & Service Cards */
+.product-card, .service-card {
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(139,115,85,0.2);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card:hover, .service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Icons */
+.service-card img,
+.service-card i {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-item {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid rgba(139,115,85,0.2);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #844941, #964c18);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+    header p {
+        font-size: 1.1rem;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+    }
+    section {
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+}
+
+/* Buy */
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 150px;
+}
+
+button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(43, 162, 43);
+}
+
+#purchase-btn {
+  margin-top: 10px;
+  background: blue;
+}
+
+#purchase-btn:hover {
+  background: darkblue;
+}
