@@ -55,13 +55,71 @@
     <a href="contacts.html">Contact</a>
 </nav>
 
-<section id="PRINTS">
+<!-- PRINTS -->
+<section id="products">
     <h2>PRINTS</h2>
     <h3>Here are prices of our customized products.</h3>
+    
+    <details>
+        <summary class="product-button">View the Products</summary>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\1.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\2.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\3.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\4.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\5.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\6.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\7.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\8.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\9.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\10.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\11.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+            <div class="product-card">
+                <div> <img src="Visual\prints\12.png" width="550" height="750" alt=""></a> </div>
+            </div>
+
+        </div>
+    </details>
 </section>
 
+<!-- PERSONALIZED -->
 <section id="products">
-    <h2>Personalized</h2>
+    <h2>PERSONALIZED</h2>
     <h3>Here are prices of our customized products.</h3>
     
     <details>
@@ -116,8 +174,9 @@
     </details>
 </section>
 
+<!-- STICKERS -->
 <section id="products">
-    <h2>Stickers</h2>
+    <h2>STICKERS</h2>
     <h3>Here are prices of our customized products.</h3>
 
     <details>
@@ -150,8 +209,9 @@
     </details>
 </section>
 
+<!-- BUSINESS -->
 <section id="products">
-    <h2>Business</h2>
+    <h2>BUSINESS</h2>
     <h3>Here are prices of our customized products.</h3>
 
     <details>
@@ -179,8 +239,9 @@
     </details>
 </section>
 
+<!-- OTHERS -->
 <section id="products">
-    <h2>Others</h2>
+    <h2>OTHERS</h2>
     <h3>Here are prices of our customized products.</h3>
 
     <details>
@@ -214,16 +275,29 @@
 </section>
 
   <hr>
-
+  
+<!-- Purchase -->
+<section id="purchase">
   <h2>Shopping Cart</h2>
   <ul id="cart-items"></ul>
   <h3 id="cart-total">Total: ₱0</h3>
 
-  <button id="purchase-btn" onclick="purchase()">Purchase</button>
+<!-- Purchase Email -->
+  <div style="margin: 15px 0;">
+    <input 
+        type="email" 
+        id="email" 
+        placeholder="Enter your email address" 
+        required
+        style="padding:15px; width:250px;"
+    >
+</div>
+</section>
 
+
+  <button id="purchase-btn" onclick="purchase()">Purchase</button>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="Local Storage.js"></script>
-</body>
-</html>
 
 <footer>
     <p>© 2021 Mommy Narlyn's Printing Shop. All rights reserved.</p>
