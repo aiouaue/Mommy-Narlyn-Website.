@@ -295,7 +295,7 @@ button:hover {
 }
 
 button {
-  background: green;
+  background: #008000;
   color: white;
   border: none;
   padding: 20px 25px;
@@ -303,21 +303,22 @@ button {
 }
 
 button:hover {
-  background: rgb(43, 162, 43);
+  background: #2ba22b;
 }
 
 #purchase-btn {
   margin-top: 10px;
-  background: blue;
+  background: #008000;
 }
 
 #purchase-btn:hover {
-  background: darkblue;
+  background: #2ba22b;
 }
+
 
 #loginform {
   background: #dfa8a2;
-  padding: 30px 40px;
+  padding: 50px 60px;
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
   color: #000000;
@@ -326,7 +327,7 @@ button:hover {
 
 #loginform h2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
   color: #000000;
 }
@@ -338,7 +339,7 @@ button:hover {
 }
 
 #loginform input {
-  padding: 8px;
+  padding: 15px;
   border: 1px solid #fff;
   border-radius: 5px;
   margin-bottom: 2px;
@@ -351,14 +352,15 @@ button:hover {
   padding: 10px;
   border: none;
   border-radius: 6px;
-  background: #ffffff;
+  background: #008000;
   color: #000000;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s;
 }
 
 #loginform button:hover {
-  background: #f6f6ff;
+  background: #2ba22b;
 }
+
